@@ -26,5 +26,4 @@ pkgs.writeShellScriptBin "wallsetter" ''
     ;;
   esac
   ${pkgs.swww}/bin/swww img "$WALLPAPER" $TRANSITION
-  fi
 ''
