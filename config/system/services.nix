@@ -35,4 +35,19 @@
       auth include login
     '';
   };
+
+  # undervolting services:
+  services.undervolt = {   
+    enable = true;
+    coreOffset = -100;
+    uncoreOffset = -100;
+    analogioOffset = -100;
+    gpuOffset = -100;
+    temp = 90;
+    p1.limit = 60;
+    p1.window = 999;
+    p2.limit = 60;
+    p2.window = 999;
+    useTimer = true;
+  };
 }
