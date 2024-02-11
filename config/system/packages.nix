@@ -14,7 +14,7 @@
     toybox virt-viewer swappy ripgrep appimage-run 
     networkmanagerapplet yad
     # own programs:
-    powertop undervolt vscode gh tmux fzf tldr bat intel-gpu-tools
+    geekbench powertop undervolt vscode gh tmux fzf tldr bat intel-gpu-tools
   ];
 
   programs.steam.gamescopeSession.enable = true;
