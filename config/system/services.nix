@@ -45,9 +45,9 @@
     gpuOffset = -100;
     temp = 90;
     p1.limit = 60;
-    p1.window = 999;
+    p1.window = 99;
     p2.limit = 60;
     p2.window = 999;
-    useTimer = true;
+    # useTimer = true;
   };
 }
