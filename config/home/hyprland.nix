@@ -42,7 +42,7 @@ in with lib; {
           natural_scroll = false
         }
         sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
-        accel_profile = flat
+        accel_profile = adaptive
       }
       env = NIXOS_OZONE_WL, 1
       env = NIXPKGS_ALLOW_UNFREE, 1
