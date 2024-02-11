@@ -36,7 +36,7 @@
     nixosConfigurations = {
       "${hostname}" = nixpkgs.lib.nixosSystem {
 	specialArgs = { 
-          inherit system; inherit inputs; 
+          inherit system; inherit inputs;
           inherit username; inherit hostname;
         };
 	modules = [ 
@@ -56,5 +56,10 @@
 	];
       };
     };
+
+    # undervolting kernel driver:
+    environment.systemPackages = [
+      pkgs.linuxKernel.packages.linux_6_1.phc-intel
+    ];
   };
 }

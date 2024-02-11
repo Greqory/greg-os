@@ -13,7 +13,7 @@ in {
   slickbar = true;
   borderAnim = true;
   browser = "brave";
-  wallpaperGit = "https://gitlab.com/Zaney/my-wallpapers.git";
+  wallpaperGit = "https://github.com/Greqory/Wallpapers.git";
   wallpaperDir = "${userHome}/Pictures/Wallpapers";
   flakeDir = "${userHome}/greg-os";
   screenshotDir = "${userHome}/Pictures/Screenshots";
