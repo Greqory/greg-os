@@ -16,33 +16,28 @@ pkgs.writeShellScriptBin "wallsetter" ''
     ${pkgs.git}/bin/git clone ${wallpaperGit} ${wallpaperDir}
     chown -R ${username}:users ${wallpaperDir}
   fi
-  while true;
-  do
-    if [ "$WALLPAPER" == "$PREVIOUS" ]
-    then
-      WALLPAPER=$(find ${wallpaperDir} -name '*' | awk '!/.git/' | tail -n +2 | shuf -n 1)
-    else
-      PREVIOUS=$WALLPAPER
-      NUM=$(shuf -e 1 2 3 4 5 -n 1)
-      case $NUM in
-        1)
-          TRANSITION=$TRANSITION1
-        ;;
-        2)
-          TRANSITION=$TRANSITION2
-        ;;
-        3)
-          TRANSITION=$TRANSITION3
-        ;;
-        4)
-          TRANSITION=$TRANSITION4
-        ;;
-        5)
-          TRANSITION=$TRANSITION5
-        ;;
-      esac
-      ${pkgs.swww}/bin/swww img "$WALLPAPER" $TRANSITION
-      sleep $TIMEOUT
-    fi
-  done
+  if [ "$WALLPAPER" == "$PREVIOUS" ]
+  then
+    WALLPAPER=$(find ${wallpaperDir} -name '*' | awk '!/.git/' | tail -n +2 | shuf -n 1)
+  else
+    PREVIOUS=$WALLPAPER
+    NUM=$(shuf -e 1 2 3 4 5 -n 1)
+    case $NUM in
+      1)
+        TRANSITION=$TRANSITION1
+      ;;
+      2)
+        TRANSITION=$TRANSITION2
+      ;;
+      3)
+        TRANSITION=$TRANSITION3
+      ;;
+      4)
+        TRANSITION=$TRANSITION4
+      ;;
+      5)
+        TRANSITION=$TRANSITION5
+      ;;
+    esac
+    ${pkgs.swww}/bin/swww img "$WALLPAPER" $TRANSITION
 ''
