@@ -1,7 +1,7 @@
 { pkgs, username, wallpaperDir, wallpaperGit }:
 
 pkgs.writeShellScriptBin "wallsetter" ''
-  TIMEOUT=720
+#  TIMEOUT=720
   TRANSITION1="--transition-type wave --transition-angle 120 --transition-step 30"
   TRANSITION2="--transition-type wipe --transition-angle 30 --transition-step 30"
   TRANSITION3="--transition-type center --transition-step 30"
@@ -40,4 +40,5 @@ pkgs.writeShellScriptBin "wallsetter" ''
       ;;
     esac
     ${pkgs.swww}/bin/swww img "$WALLPAPER" $TRANSITION
+  fi
 ''
