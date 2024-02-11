@@ -83,4 +83,7 @@
       turbo = "auto";
     };
   };
+
+  # enable powertop:
+  powerManagement.powertop.enable = true;
 }
