@@ -40,10 +40,9 @@ in with lib; {
         follow_mouse = 1
         touchpad {
           natural_scroll = false
-	  accel_profile = adaptive
         }
         sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
-        accel_profile = flat
+        # accel_profile = flat
       }
       env = NIXOS_OZONE_WL, 1
       env = NIXPKGS_ALLOW_UNFREE, 1
