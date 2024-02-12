@@ -20,9 +20,9 @@ in with lib; {
       modifier = "SUPER";
     in concatStrings [ ''
       monitor=,preferred,auto,1
-      windowrule = float, ^(steam)$
-      windowrule = center, ^(steam)$
+      windowrule = float, ^(steam)$      
       windowrule = size 1080 900, ^(steam)$
+      windowrule = center, ^(steam)$
       general {
         gaps_in = 6
         gaps_out = 8
@@ -139,7 +139,7 @@ in with lib; {
       bind = ${modifier},E,exec,emopicker9000
       bind = ${modifier},S,exec,screenshootin
       bind = ${modifier},D,exec,discord
-      bind = ${modifier},O,exec,obs
+      bind = ${modifier},O,exec,wallsetter
       bind = ${modifier},G,exec,gimp
       bind = ${modifier}SHIFT,G,exec,godot4
       bind = ${modifier},T,exec,thunar
