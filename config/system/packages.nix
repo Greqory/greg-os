@@ -7,7 +7,7 @@
   # fuck obsidian devs:
   nixpkgs.config.permittedInsecurePackages = [
     "electron-25.9.0"
-  ]
+  ];
 
   # List System Programs
   environment.systemPackages = with pkgs; [
