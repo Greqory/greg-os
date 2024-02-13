@@ -138,7 +138,8 @@ in with lib; {
       bind = ${modifier},E,exec,emopicker9000
       bind = ${modifier},S,exec,screenshootin
       bind = ${modifier},D,exec,discord
-      bind = ${modifier},O,exec,wallsetter
+      bind = ${modifier},L,exec,wallsetter
+      bind = ${modifier},O,exec,Obsidian-1.5.3.AppImage
       bind = ${modifier},G,exec,gimp
       bind = ${modifier}SHIFT,G,exec,godot4
       bind = ${modifier},T,exec,thunar
