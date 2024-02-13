@@ -137,8 +137,9 @@ in with lib; {
       ''}
       bind = ${modifier},E,exec,emopicker9000
       bind = ${modifier},S,exec,screenshootin
+      bind = ${modifier},L,exec,swaylock -f
+      bind = ${modifier},H,exec,wallsetter
       bind = ${modifier},D,exec,discord
-      bind = ${modifier},L,exec,wallsetter
       bind = ${modifier},O,exec,appimage-run /home/greg/bin/Obsidian-1.5.3.AppImage
       bind = ${modifier},G,exec,gimp
       bind = ${modifier}SHIFT,G,exec,godot4

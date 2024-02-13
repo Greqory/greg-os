@@ -96,7 +96,7 @@ in {
                     },
                     {
                         "label": "",
-                        "command": "firefox"
+                        "command": "brave"
                     },
                     {
                         "label": "",
