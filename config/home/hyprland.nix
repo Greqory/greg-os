@@ -109,6 +109,7 @@ in with lib; {
           color = rgba(${theme.base0A}ff)
         }
       }
+      exec-once = export PATH=$PATH:/home/greg/bin
       exec-once = $POLKIT_BIN
       exec-once = dbus-update-activation-environment --systemd --all
       exec-once = systemctl --user import-environment QT_QPA_PLATFORMTHEME WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
@@ -139,7 +140,7 @@ in with lib; {
       bind = ${modifier},S,exec,screenshootin
       bind = ${modifier},D,exec,discord
       bind = ${modifier},L,exec,wallsetter
-      bind = ${modifier},O,exec,Obsidian-1.5.3.AppImage
+      bind = ${modifier},O,exec,appimage-run Obsidian-1.5.3.AppImage
       bind = ${modifier},G,exec,gimp
       bind = ${modifier}SHIFT,G,exec,godot4
       bind = ${modifier},T,exec,thunar

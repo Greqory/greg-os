@@ -30,8 +30,6 @@ lib.mkIf (theShell == "zsh") {
         source $HOME/.zshrc-personal
       fi
       eval "$(starship init zsh)"
-
-      export PATH=$PATH:$HOME/bin
     '';
     initExtraFirst = ''
       HISTFILE=~/.histfile
