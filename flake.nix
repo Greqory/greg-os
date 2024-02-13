@@ -30,6 +30,7 @@
       inherit system;
       config = {
 	    allowUnfree = true;
+	    permittedInsecurePackages = pkgs.lib.optional (pkgs.obsidian.version == "1.5.3") "electron-25.9.0";
       };
     };
   in {
@@ -61,14 +62,5 @@
     environment.systemPackages = [
       pkgs.linuxKernel.packages.linux_6_1.phc-intel
     ];
-
-    # for Obsidian:
-    nixpkgs = {
-    config = {
-      allowUnfree = true;
-      permittedInsecurePackages = pkgs.lib.optional (pkgs.obsidian.version == "1.5.3") "electron-25.9.0";
-      };
-    };
-
   };
 }
