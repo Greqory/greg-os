@@ -19,6 +19,7 @@
     ./swaync.nix
     ./wezterm.nix
     ./zsh.nix
+    ./btop.nix
 
     # Place Home Files Like Pictures
     ./files.nix
