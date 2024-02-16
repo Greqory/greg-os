@@ -59,7 +59,8 @@ lib.mkIf (theShell == "zsh") {
       ll="lsd -l";
       la="lsd -a";
       lal="lsd -al";
-      ".."="cd ..";
+      ".."="z ..";
+      cd="z";
     };
   };
 }
