@@ -15,7 +15,7 @@
     networkmanagerapplet yad
     # own programs:
     geekbench powertop undervolt vscode gh tmux fzf tldr bat intel-gpu-tools
-    appimage-run android-tools zoxide
+    appimage-run android-tools zoxide yazi
   ];
 
   programs.steam.gamescopeSession.enable = true;
