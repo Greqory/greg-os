@@ -17,7 +17,7 @@ in {
       };
       startup = { 
 	enable = true;
-	theme = "evil";
+	theme = "catppuccin";
 	userMappings = {
 	  "<leader>ff" = "<cmd>Telescope find_files<CR>";
 	  "<leader>s"  = "<cmd>Telescope live_grep<CR>";
@@ -45,6 +45,7 @@ in {
 	  jsonls.enable = true;
 	  pyright.enable = true;
 	  tailwindcss.enable = true;
+	  clangd.enable = true;
 	};
       };
       treesitter.enable = true;
