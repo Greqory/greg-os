@@ -17,7 +17,7 @@ in {
       };
       startup = { 
 	enable = true;
-	theme = "catppuccin";
+	theme = "evil";
 	userMappings = {
 	  "<leader>ff" = "<cmd>Telescope find_files<CR>";
 	  "<leader>s"  = "<cmd>Telescope live_grep<CR>";
