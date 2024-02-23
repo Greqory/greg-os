@@ -30,7 +30,7 @@
       inherit system;
       config = {
 	    allowUnfree = true;
-	    permittedInsecurePackages = "freeimage-unstable-2021-11-01";
+	    # permittedInsecurePackages = "freeimage-unstable-2021-11-01";
       };
     };
   in {
@@ -62,5 +62,11 @@
     environment.systemPackages = [
       pkgs.linuxKernel.packages.linux_6_1.phc-intel
     ];
+
+    # allowing stupid shit:
+    nixpkgs.config.permittedInsecurePackages = [
+      "freeimage-unstable-2021-11-01"
+    ];
+
   };
 }
