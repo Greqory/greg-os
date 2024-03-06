@@ -2,6 +2,7 @@
 
 {
   # List services that you want to enable:
+  virtualisation.docker.enable = true;
   services.openssh.enable = false;
   services.fstrim.enable = true;
   xdg.portal = {
