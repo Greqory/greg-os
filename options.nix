@@ -9,7 +9,7 @@ in {
   # User Variables
   gitUsername = "Greqory";
   gitEmail = "gregor.thume@gmail.com";
-  theme = "catppuccin-mocha";
+  theme = "catppuccin-latte";
   slickbar = true;
   borderAnim = true;
   browser = "brave";

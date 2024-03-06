@@ -5,11 +5,10 @@
     enable = true;
     package = pkgs.btop;
     settings = {
-      color_theme = "night-owl";
+      color_theme = "catppuccin_mocha";
       theme_background = false;
       update_ms = 1000;
       selected_battery = "Auto";
-      
     };
   };
 }
