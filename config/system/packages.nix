@@ -16,7 +16,7 @@
     # own programs:
     geekbench powertop undervolt vscode gh tmux fzf tldr bat intel-gpu-tools
     appimage-run android-tools zoxide yazi libreoffice-qt
-    nmap qtcreator
+    nmap qtcreator obsidian
   ];
 
   programs.steam.gamescopeSession.enable = true;
