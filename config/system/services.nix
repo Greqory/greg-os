@@ -85,6 +85,10 @@
     };
   };
 
+  # ModemManager services
+  services.ModemManager.enable = true;
+
+
   # enable powertop:
   powerManagement.powertop.enable = true;
 }
