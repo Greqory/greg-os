@@ -12,8 +12,10 @@ in {
       neo-tree.enable = true;
       airline = {
 	enable = true;
-	powerlineFonts = true;
-	theme = "tomorrow";
+	settings = {
+	  powerline_fonts = true;
+	  theme = "tomorrow";
+	};
       };
       startup = { 
 	enable = true;
@@ -49,22 +51,22 @@ in {
 	};
       };
       treesitter.enable = true;
-      nvim-cmp = {
-	enable = true;
-	autoEnableSources = true;
-	sources = [
-	  { name = "nvim_lsp"; }
-	  { name = "path"; }
-	  { name = "buffer"; }
-	];
-	mapping = {
-	  "<CR>" = "cmp.mapping.confirm({ select = true })";
-	  "<Tab>" = {
-	    action = ''cmp.mapping.select_next_item()'';
-	    modes = [ "i" "s" ];
-	  };
-	};
-      };
+      #nvim-cmp = {
+#	enable = true;
+	# autoEnableSources = true;
+#	sources = [
+#	  { name = "nvim_lsp"; }
+#	  { name = "path"; }
+#	  { name = "buffer"; }
+#	];
+#	mapping = {
+#	  "<CR>" = "cmp.mapping.confirm({ select = true })";
+#	  "<Tab>" = {
+#	    action = ''cmp.mapping.select_next_item()'';
+#	    modes = [ "i" "s" ];
+#	  };
+#	};
+#      };
     };
 
     extraPlugins = [
@@ -118,6 +120,5 @@ in {
       scrolloff = 8;
       updatetime = 50;
     };
-
   };
  } 
