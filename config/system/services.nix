@@ -86,7 +86,7 @@
   };
 
   # ModemManager services
-  networking.modemmanager.enable = true;
+  services.modemmanager.enable = true;
   networking.networkmanager.enable = true;
 
   # enable powertop:
