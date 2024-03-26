@@ -17,7 +17,7 @@
     geekbench powertop undervolt vscode gh tmux fzf tldr bat intel-gpu-tools
     appimage-run android-tools zoxide yazi libreoffice-qt
     nmap qtcreator obsidian docker ansible python311Packages.pip
-    modemmanager remmina CMake
+    modemmanager remmina cmake
   ];
 
   programs.steam.gamescopeSession.enable = true;

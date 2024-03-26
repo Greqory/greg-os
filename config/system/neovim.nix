@@ -26,7 +26,7 @@ in {
 	  "<leader>f"  = "<cmd>Neotree reveal right<CR>";
 	};
       };
-      comment-nvim.enable = true;
+      comment.enable = true;
       lsp = {
 	enable = true;
 	servers = {
